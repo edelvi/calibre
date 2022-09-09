@@ -1,3 +1,11 @@
+
+# Login URL de la Developer Org
+
+- [Autenticarse en la Developer Org](https://calibreairlinescom-dev-ed.my.salesforce.com)
+- Abrir la App Calibre Airlines desde el App Launcher
+- Ejecutar el Utility Items Enter data, si quiere entrar datos nuevos(Grafo nuevo)
+- Ejecutar el Utility Items Calculate route, si quiere calcular un camino entre dos ciudades
+
 # Flows y Validation Rules
 
 ## 1. Calculate route.
@@ -18,6 +26,3 @@ Esta clase contiene todos los métodos necesarios para calcular el camino mínim
 ## 2.	Queue 
 Salsforce no dispone de una estructura de datos que sea una cola FIFO, la cual es necesaria para hacer BFS en la clase calculateRoute.
 
-# Login URL de la Developer Org
-
-- [Login](https://calibreairlinescom-dev-ed.my.salesforce.com)
