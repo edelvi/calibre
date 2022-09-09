@@ -1,18 +1,23 @@
-# Salesforce DX Project: Next Steps
+# Flows y Validation Rules
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+## 1. Calculate route.
+Dada una ciudad de Origen y otra de Destino, calcula una ruta, si existe y la muestra por pantalla. Si no existe también muestra un mensaje de error al usuario diciendo que no existe una ruta entre ambas ciudades.
 
-## How Do You Plan to Deploy Your Changes?
+- Validation Rule: Different_origin_and_destination. Adicionalmente se creó una Valitation Rule en el objeto Routes, para asegurar que la ciudad de Destino y Origen son  diferentes. Ya que, por ejemplo, no tiene sentido calcular una ruta entre Valencia y Valencia.
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+## 2. Enter data.
+Guía al usuario para automatizar el proceso de entrada de datos. Primeramente, se introduce una ciudad, y luego el usuario tiene la posibilidad de entrar todas las conexiones desde esa ciudad hacia cualquier otra ciudad que exista en el sistema. 
 
-## Configure Your Salesforce DX Project
+- NOTA: Ambos flows se pueden iniciar desde los dos Utility Items que se encuentran en la esquina inferior izquierda del escritorio.
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+# Clases de Apex
 
-## Read All About It
+## 1. calculateRoute
+Esta clase contiene todos los métodos necesarios para calcular el camino mínimo entre dos ciudades. Es llamada desde el Flow Calculate Route.
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+## 2.	Queue 
+Salsforce no dispone de una estructura de datos que sea una cola FIFO, la cual es necesaria para hacer BFS en la clase calculateRoute.
+
+# Login URL de la Developer Org
+
+- [Login](https://calibreairlinescom-dev-ed.my.salesforce.com)
