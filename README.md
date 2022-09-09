@@ -6,7 +6,7 @@
 - Ejecutar el Utility Items Enter data, si quiere entrar datos nuevos(Grafo nuevo)
 - Ejecutar el Utility Items Calculate route, si quiere calcular un camino entre dos ciudades
 
-# Flows y Validation Rules
+# Flows
 
 ## 1. Calculate route.
 Dada una ciudad de Origen y otra de Destino, calcula una ruta, si existe y la muestra por pantalla. Si no existe también muestra un mensaje de error al usuario diciendo que no existe una ruta entre ambas ciudades.
