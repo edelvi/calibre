@@ -1,5 +1,5 @@
 
-# Login URL de la Developer Org
+# Pasos a seguir para probar la solución
 
 - [Autenticarse en la Developer Org](https://calibreairlinescom-dev-ed.my.salesforce.com)
 - Abrir la App Calibre Airlines desde el App Launcher
